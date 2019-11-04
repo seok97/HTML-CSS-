@@ -1,19 +1,24 @@
-
+html{
+    width: 100%;
+}
 body{
+    width: 100%;
+    padding: 0;
     margin: 0;
 }
+
+/* 헤더 부분 */
 
 #header{
     width: -webkit-fill-available;
     z-index: 10;
     position: absolute;
     top: 0;
-    background-color: black;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 0px 30% 0px;
 }
 
-#header > div{
+#header div{
     z-index: 11;
     display: inline-block;
 }
@@ -23,37 +28,40 @@ body{
 }
 
 #header_menu{
-    margin: 27px;
+    margin: 27px 0px 27px;
     float: right;
     line-height: 100%;
 }
 
-#header_menu > {
-    vertical-align: middle;
+/* content 부분 */
+#all_body{
+    width: -webkit-fill-available;
 }
 
-#all_body {
-    border: 0px;
-    margin: 0;
+#top_logoandbutton{
     width: 100%;
-    text-align: center;
-}
-
-#all_body > *{
-    display: inline-block;
-}
-
-#logo_button_header_menu{
-    height: 944.12598425px;
+    height: 25cm;
     background-color: #184d5a;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
-
-
-#middle{
-    border: 5px solid hotpink;
+#main_name{
+    margin: 8cm 0px 0px;
+    background-color: #11363f;
+    max-width: 18cm;
+    width: 40%;
+    height: fit-content;
+    min-width: 576px;
 }
 
-#footer{
-    border: 5px solid aquamarine;
+#name{
+    margin: 60px 110px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
 }
